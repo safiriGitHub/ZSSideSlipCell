@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0341300122754A6300829E99 /* ZSSideSlipCellProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0341300022754A6300829E99 /* ZSSideSlipCellProxy.m */; };
+		0341300422754F9300829E99 /* UITableView+ZSSideSlip.m in Sources */ = {isa = PBXBuildFile; fileRef = 0341300322754F9300829E99 /* UITableView+ZSSideSlip.m */; };
+		034130072275854900829E99 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 034130062275854900829E99 /* TabBarController.m */; };
+		0341300E2275892000829E99 /* WeChatVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0341300D2275892000829E99 /* WeChatVC.m */; };
+		034130112275893000829E99 /* ContactsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 034130102275893000829E99 /* ContactsVC.m */; };
+		034130142275895200829E99 /* DiscoverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 034130132275895200829E99 /* DiscoverVC.m */; };
+		034130172275895F00829E99 /* MineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 034130162275895F00829E99 /* MineVC.m */; };
+		0341301A22758E8900829E99 /* ChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0341301922758E8900829E99 /* ChatCell.m */; };
+		0341301D22758EA100829E99 /* ChatModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0341301C22758EA100829E99 /* ChatModel.m */; };
+		034130202275A35300829E99 /* FavoriteTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0341301F2275A35300829E99 /* FavoriteTableVC.m */; };
+		034130262275A57500829E99 /* FavoriteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 034130252275A57500829E99 /* FavoriteModel.m */; };
+		03DB3CF22272D31D00CD04FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DB3CF12272D31D00CD04FD /* AppDelegate.m */; };
+		03DB3CF82272D31D00CD04FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03DB3CF62272D31D00CD04FD /* Main.storyboard */; };
+		03DB3CFA2272D31F00CD04FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03DB3CF92272D31F00CD04FD /* Assets.xcassets */; };
+		03DB3CFD2272D31F00CD04FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03DB3CFB2272D31F00CD04FD /* LaunchScreen.storyboard */; };
+		03DB3D002272D31F00CD04FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DB3CFF2272D31F00CD04FD /* main.m */; };
+		03DB3D092272D43400CD04FD /* ZSSideSlipCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DB3D082272D43400CD04FD /* ZSSideSlipCell.m */; };
+		03DB3D0D2272D5C000CD04FD /* ZSSideSlipAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DB3D0C2272D5C000CD04FD /* ZSSideSlipAction.m */; };
+		03DB3D102272F87B00CD04FD /* ZSSideSlipContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DB3D0F2272F87B00CD04FD /* ZSSideSlipContainerView.m */; };
+		03F4A20B2276905D00B445D0 /* FavoriteLinkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F4A20A2276905D00B445D0 /* FavoriteLinkCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		03412FFF22754A6300829E99 /* ZSSideSlipCellProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSSideSlipCellProxy.h; sourceTree = "<group>"; };
+		0341300022754A6300829E99 /* ZSSideSlipCellProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSSideSlipCellProxy.m; sourceTree = "<group>"; };
+		0341300222754F9300829E99 /* UITableView+ZSSideSlip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+ZSSideSlip.h"; sourceTree = "<group>"; };
+		0341300322754F9300829E99 /* UITableView+ZSSideSlip.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+ZSSideSlip.m"; sourceTree = "<group>"; };
+		034130052275854900829E99 /* TabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		034130062275854900829E99 /* TabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+		0341300C2275892000829E99 /* WeChatVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeChatVC.h; sourceTree = "<group>"; };
+		0341300D2275892000829E99 /* WeChatVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeChatVC.m; sourceTree = "<group>"; };
+		0341300F2275893000829E99 /* ContactsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactsVC.h; sourceTree = "<group>"; };
+		034130102275893000829E99 /* ContactsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactsVC.m; sourceTree = "<group>"; };
+		034130122275895200829E99 /* DiscoverVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoverVC.h; sourceTree = "<group>"; };
+		034130132275895200829E99 /* DiscoverVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoverVC.m; sourceTree = "<group>"; };
+		034130152275895F00829E99 /* MineVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineVC.h; sourceTree = "<group>"; };
+		034130162275895F00829E99 /* MineVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineVC.m; sourceTree = "<group>"; };
+		0341301822758E8900829E99 /* ChatCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatCell.h; sourceTree = "<group>"; };
+		0341301922758E8900829E99 /* ChatCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatCell.m; sourceTree = "<group>"; };
+		0341301B22758EA100829E99 /* ChatModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatModel.h; sourceTree = "<group>"; };
+		0341301C22758EA100829E99 /* ChatModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatModel.m; sourceTree = "<group>"; };
+		0341301E2275A35300829E99 /* FavoriteTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavoriteTableVC.h; sourceTree = "<group>"; };
+		0341301F2275A35300829E99 /* FavoriteTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavoriteTableVC.m; sourceTree = "<group>"; };
+		034130242275A57500829E99 /* FavoriteModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavoriteModel.h; sourceTree = "<group>"; };
+		034130252275A57500829E99 /* FavoriteModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavoriteModel.m; sourceTree = "<group>"; };
+		03DB3CED2272D31D00CD04FD /* ZSSideSlipCell_Master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZSSideSlipCell_Master.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03DB3CF02272D31D00CD04FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		03DB3CF12272D31D00CD04FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		03DB3CF72272D31D00CD04FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		03DB3CF92272D31F00CD04FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03DB3CFC2272D31F00CD04FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		03DB3CFE2272D31F00CD04FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03DB3CFF2272D31F00CD04FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		03DB3D072272D43400CD04FD /* ZSSideSlipCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSSideSlipCell.h; sourceTree = "<group>"; };
+		03DB3D082272D43400CD04FD /* ZSSideSlipCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSSideSlipCell.m; sourceTree = "<group>"; };
+		03DB3D0A2272D49D00CD04FD /* ZSSideSlipConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSSideSlipConfig.h; sourceTree = "<group>"; };
+		03DB3D0B2272D5C000CD04FD /* ZSSideSlipAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSSideSlipAction.h; sourceTree = "<group>"; };
+		03DB3D0C2272D5C000CD04FD /* ZSSideSlipAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSSideSlipAction.m; sourceTree = "<group>"; };
+		03DB3D0E2272F87B00CD04FD /* ZSSideSlipContainerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSSideSlipContainerView.h; sourceTree = "<group>"; };
+		03DB3D0F2272F87B00CD04FD /* ZSSideSlipContainerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSSideSlipContainerView.m; sourceTree = "<group>"; };
+		03F4A2092276905D00B445D0 /* FavoriteLinkCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavoriteLinkCell.h; sourceTree = "<group>"; };
+		03F4A20A2276905D00B445D0 /* FavoriteLinkCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavoriteLinkCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03DB3CEA2272D31D00CD04FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03413008227588E800829E99 /* 微信 */ = {
+			isa = PBXGroup;
+			children = (
+				0341300C2275892000829E99 /* WeChatVC.h */,
+				0341300D2275892000829E99 /* WeChatVC.m */,
+				0341301822758E8900829E99 /* ChatCell.h */,
+				0341301922758E8900829E99 /* ChatCell.m */,
+				0341301B22758EA100829E99 /* ChatModel.h */,
+				0341301C22758EA100829E99 /* ChatModel.m */,
+			);
+			path = "微信";
+			sourceTree = "<group>";
+		};
+		03413009227588F100829E99 /* 通讯录 */ = {
+			isa = PBXGroup;
+			children = (
+				0341300F2275893000829E99 /* ContactsVC.h */,
+				034130102275893000829E99 /* ContactsVC.m */,
+			);
+			path = "通讯录";
+			sourceTree = "<group>";
+		};
+		0341300A227588F800829E99 /* 发现 */ = {
+			isa = PBXGroup;
+			children = (
+				034130122275895200829E99 /* DiscoverVC.h */,
+				034130132275895200829E99 /* DiscoverVC.m */,
+			);
+			path = "发现";
+			sourceTree = "<group>";
+		};
+		0341300B227588FD00829E99 /* 我 */ = {
+			isa = PBXGroup;
+			children = (
+				034130152275895F00829E99 /* MineVC.h */,
+				034130162275895F00829E99 /* MineVC.m */,
+				0341301E2275A35300829E99 /* FavoriteTableVC.h */,
+				0341301F2275A35300829E99 /* FavoriteTableVC.m */,
+				03F4A2092276905D00B445D0 /* FavoriteLinkCell.h */,
+				03F4A20A2276905D00B445D0 /* FavoriteLinkCell.m */,
+				034130242275A57500829E99 /* FavoriteModel.h */,
+				034130252275A57500829E99 /* FavoriteModel.m */,
+			);
+			path = "我";
+			sourceTree = "<group>";
+		};
+		03DB3CE42272D31D00CD04FD = {
+			isa = PBXGroup;
+			children = (
+				03DB3D062272D41200CD04FD /* Classes */,
+				03DB3CEF2272D31D00CD04FD /* ZSSideSlipCell_Master */,
+				03DB3CEE2272D31D00CD04FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		03DB3CEE2272D31D00CD04FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03DB3CED2272D31D00CD04FD /* ZSSideSlipCell_Master.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03DB3CEF2272D31D00CD04FD /* ZSSideSlipCell_Master */ = {
+			isa = PBXGroup;
+			children = (
+				03DB3CF02272D31D00CD04FD /* AppDelegate.h */,
+				03DB3CF12272D31D00CD04FD /* AppDelegate.m */,
+				034130052275854900829E99 /* TabBarController.h */,
+				034130062275854900829E99 /* TabBarController.m */,
+				0341300B227588FD00829E99 /* 我 */,
+				0341300A227588F800829E99 /* 发现 */,
+				03413009227588F100829E99 /* 通讯录 */,
+				03413008227588E800829E99 /* 微信 */,
+				03DB3CF62272D31D00CD04FD /* Main.storyboard */,
+				03DB3CF92272D31F00CD04FD /* Assets.xcassets */,
+				03DB3CFB2272D31F00CD04FD /* LaunchScreen.storyboard */,
+				03DB3CFE2272D31F00CD04FD /* Info.plist */,
+				03DB3CFF2272D31F00CD04FD /* main.m */,
+			);
+			path = ZSSideSlipCell_Master;
+			sourceTree = "<group>";
+		};
+		03DB3D062272D41200CD04FD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				03DB3D072272D43400CD04FD /* ZSSideSlipCell.h */,
+				03DB3D082272D43400CD04FD /* ZSSideSlipCell.m */,
+				03DB3D0A2272D49D00CD04FD /* ZSSideSlipConfig.h */,
+				03DB3D0B2272D5C000CD04FD /* ZSSideSlipAction.h */,
+				03DB3D0C2272D5C000CD04FD /* ZSSideSlipAction.m */,
+				03DB3D0E2272F87B00CD04FD /* ZSSideSlipContainerView.h */,
+				03DB3D0F2272F87B00CD04FD /* ZSSideSlipContainerView.m */,
+				03412FFF22754A6300829E99 /* ZSSideSlipCellProxy.h */,
+				0341300022754A6300829E99 /* ZSSideSlipCellProxy.m */,
+				0341300222754F9300829E99 /* UITableView+ZSSideSlip.h */,
+				0341300322754F9300829E99 /* UITableView+ZSSideSlip.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03DB3CEC2272D31D00CD04FD /* ZSSideSlipCell_Master */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03DB3D032272D31F00CD04FD /* Build configuration list for PBXNativeTarget "ZSSideSlipCell_Master" */;
+			buildPhases = (
+				03DB3CE92272D31D00CD04FD /* Sources */,
+				03DB3CEA2272D31D00CD04FD /* Frameworks */,
+				03DB3CEB2272D31D00CD04FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZSSideSlipCell_Master;
+			productName = ZSSideSlipCell_Master;
+			productReference = 03DB3CED2272D31D00CD04FD /* ZSSideSlipCell_Master.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03DB3CE52272D31D00CD04FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = safiri;
+				TargetAttributes = {
+					03DB3CEC2272D31D00CD04FD = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 03DB3CE82272D31D00CD04FD /* Build configuration list for PBXProject "ZSSideSlipCell_Master" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03DB3CE42272D31D00CD04FD;
+			productRefGroup = 03DB3CEE2272D31D00CD04FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03DB3CEC2272D31D00CD04FD /* ZSSideSlipCell_Master */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03DB3CEB2272D31D00CD04FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03DB3CFD2272D31F00CD04FD /* LaunchScreen.storyboard in Resources */,
+				03DB3CFA2272D31F00CD04FD /* Assets.xcassets in Resources */,
+				03DB3CF82272D31D00CD04FD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03DB3CE92272D31D00CD04FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0341300422754F9300829E99 /* UITableView+ZSSideSlip.m in Sources */,
+				03DB3D0D2272D5C000CD04FD /* ZSSideSlipAction.m in Sources */,
+				034130072275854900829E99 /* TabBarController.m in Sources */,
+				0341300E2275892000829E99 /* WeChatVC.m in Sources */,
+				03F4A20B2276905D00B445D0 /* FavoriteLinkCell.m in Sources */,
+				034130112275893000829E99 /* ContactsVC.m in Sources */,
+				0341301D22758EA100829E99 /* ChatModel.m in Sources */,
+				034130172275895F00829E99 /* MineVC.m in Sources */,
+				03DB3D102272F87B00CD04FD /* ZSSideSlipContainerView.m in Sources */,
+				03DB3D092272D43400CD04FD /* ZSSideSlipCell.m in Sources */,
+				03DB3D002272D31F00CD04FD /* main.m in Sources */,
+				03DB3CF22272D31D00CD04FD /* AppDelegate.m in Sources */,
+				034130262275A57500829E99 /* FavoriteModel.m in Sources */,
+				0341300122754A6300829E99 /* ZSSideSlipCellProxy.m in Sources */,
+				034130202275A35300829E99 /* FavoriteTableVC.m in Sources */,
+				034130142275895200829E99 /* DiscoverVC.m in Sources */,
+				0341301A22758E8900829E99 /* ChatCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		03DB3CF62272D31D00CD04FD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03DB3CF72272D31D00CD04FD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		03DB3CFB2272D31F00CD04FD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03DB3CFC2272D31F00CD04FD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03DB3D012272D31F00CD04FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		03DB3D022272D31F00CD04FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03DB3D042272D31F00CD04FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HWZH7TV284;
+				INFOPLIST_FILE = ZSSideSlipCell_Master/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.safiri.ZSSideSlipCell-Master";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		03DB3D052272D31F00CD04FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HWZH7TV284;
+				INFOPLIST_FILE = ZSSideSlipCell_Master/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.safiri.ZSSideSlipCell-Master";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03DB3CE82272D31D00CD04FD /* Build configuration list for PBXProject "ZSSideSlipCell_Master" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03DB3D012272D31F00CD04FD /* Debug */,
+				03DB3D022272D31F00CD04FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03DB3D032272D31F00CD04FD /* Build configuration list for PBXNativeTarget "ZSSideSlipCell_Master" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03DB3D042272D31F00CD04FD /* Debug */,
+				03DB3D052272D31F00CD04FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03DB3CE52272D31D00CD04FD /* Project object */;
+}
