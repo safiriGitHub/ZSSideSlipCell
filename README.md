@@ -6,6 +6,8 @@ iOS仿微信左滑删除和收藏左滑效果
 
 iOS11之后，仿微信左滑删除，可以通过对系统方法进行改造的方式实现。这篇文章 https://www.jianshu.com/p/aa6ff5d9f965
 
+![eee](/example.gif)
+
 ### 简单介绍
 
 #### ZSSideSlipAction
