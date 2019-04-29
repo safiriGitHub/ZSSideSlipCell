@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0341300122754A6300829E99 /* ZSSideSlipCellProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0341300022754A6300829E99 /* ZSSideSlipCellProxy.m */; };
-		0341300422754F9300829E99 /* UITableView+ZSSideSlip.m in Sources */ = {isa = PBXBuildFile; fileRef = 0341300322754F9300829E99 /* UITableView+ZSSideSlip.m */; };
 		034130072275854900829E99 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 034130062275854900829E99 /* TabBarController.m */; };
 		0341300E2275892000829E99 /* WeChatVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0341300D2275892000829E99 /* WeChatVC.m */; };
 		034130112275893000829E99 /* ContactsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 034130102275893000829E99 /* ContactsVC.m */; };
@@ -23,17 +21,15 @@
 		03DB3CFA2272D31F00CD04FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03DB3CF92272D31F00CD04FD /* Assets.xcassets */; };
 		03DB3CFD2272D31F00CD04FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03DB3CFB2272D31F00CD04FD /* LaunchScreen.storyboard */; };
 		03DB3D002272D31F00CD04FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DB3CFF2272D31F00CD04FD /* main.m */; };
-		03DB3D092272D43400CD04FD /* ZSSideSlipCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DB3D082272D43400CD04FD /* ZSSideSlipCell.m */; };
-		03DB3D0D2272D5C000CD04FD /* ZSSideSlipAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DB3D0C2272D5C000CD04FD /* ZSSideSlipAction.m */; };
-		03DB3D102272F87B00CD04FD /* ZSSideSlipContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DB3D0F2272F87B00CD04FD /* ZSSideSlipContainerView.m */; };
 		03F4A20B2276905D00B445D0 /* FavoriteLinkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F4A20A2276905D00B445D0 /* FavoriteLinkCell.m */; };
+		03F4A2182276D4C800B445D0 /* ZSSideSlipContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F4A20D2276D4C800B445D0 /* ZSSideSlipContainerView.m */; };
+		03F4A2192276D4C800B445D0 /* UITableView+ZSSideSlip.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F4A20F2276D4C800B445D0 /* UITableView+ZSSideSlip.m */; };
+		03F4A21A2276D4C800B445D0 /* ZSSideSlipCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F4A2112276D4C800B445D0 /* ZSSideSlipCell.m */; };
+		03F4A21B2276D4C800B445D0 /* ZSSideSlipCellProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F4A2122276D4C800B445D0 /* ZSSideSlipCellProxy.m */; };
+		03F4A21C2276D4C800B445D0 /* ZSSideSlipAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F4A2152276D4C800B445D0 /* ZSSideSlipAction.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		03412FFF22754A6300829E99 /* ZSSideSlipCellProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSSideSlipCellProxy.h; sourceTree = "<group>"; };
-		0341300022754A6300829E99 /* ZSSideSlipCellProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSSideSlipCellProxy.m; sourceTree = "<group>"; };
-		0341300222754F9300829E99 /* UITableView+ZSSideSlip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+ZSSideSlip.h"; sourceTree = "<group>"; };
-		0341300322754F9300829E99 /* UITableView+ZSSideSlip.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+ZSSideSlip.m"; sourceTree = "<group>"; };
 		034130052275854900829E99 /* TabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
 		034130062275854900829E99 /* TabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 		0341300C2275892000829E99 /* WeChatVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeChatVC.h; sourceTree = "<group>"; };
@@ -60,15 +56,19 @@
 		03DB3CFC2272D31F00CD04FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03DB3CFE2272D31F00CD04FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03DB3CFF2272D31F00CD04FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		03DB3D072272D43400CD04FD /* ZSSideSlipCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSSideSlipCell.h; sourceTree = "<group>"; };
-		03DB3D082272D43400CD04FD /* ZSSideSlipCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSSideSlipCell.m; sourceTree = "<group>"; };
-		03DB3D0A2272D49D00CD04FD /* ZSSideSlipConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSSideSlipConfig.h; sourceTree = "<group>"; };
-		03DB3D0B2272D5C000CD04FD /* ZSSideSlipAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSSideSlipAction.h; sourceTree = "<group>"; };
-		03DB3D0C2272D5C000CD04FD /* ZSSideSlipAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSSideSlipAction.m; sourceTree = "<group>"; };
-		03DB3D0E2272F87B00CD04FD /* ZSSideSlipContainerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSSideSlipContainerView.h; sourceTree = "<group>"; };
-		03DB3D0F2272F87B00CD04FD /* ZSSideSlipContainerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSSideSlipContainerView.m; sourceTree = "<group>"; };
 		03F4A2092276905D00B445D0 /* FavoriteLinkCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavoriteLinkCell.h; sourceTree = "<group>"; };
 		03F4A20A2276905D00B445D0 /* FavoriteLinkCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavoriteLinkCell.m; sourceTree = "<group>"; };
+		03F4A20D2276D4C800B445D0 /* ZSSideSlipContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSSideSlipContainerView.m; sourceTree = "<group>"; };
+		03F4A20E2276D4C800B445D0 /* ZSSideSlipConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSSideSlipConfig.h; sourceTree = "<group>"; };
+		03F4A20F2276D4C800B445D0 /* UITableView+ZSSideSlip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+ZSSideSlip.m"; sourceTree = "<group>"; };
+		03F4A2102276D4C800B445D0 /* ZSSideSlipAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSSideSlipAction.h; sourceTree = "<group>"; };
+		03F4A2112276D4C800B445D0 /* ZSSideSlipCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSSideSlipCell.m; sourceTree = "<group>"; };
+		03F4A2122276D4C800B445D0 /* ZSSideSlipCellProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSSideSlipCellProxy.m; sourceTree = "<group>"; };
+		03F4A2132276D4C800B445D0 /* ZSSideSlipContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSSideSlipContainerView.h; sourceTree = "<group>"; };
+		03F4A2142276D4C800B445D0 /* ZSSideSlipCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSSideSlipCell.h; sourceTree = "<group>"; };
+		03F4A2152276D4C800B445D0 /* ZSSideSlipAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSSideSlipAction.m; sourceTree = "<group>"; };
+		03F4A2162276D4C800B445D0 /* UITableView+ZSSideSlip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+ZSSideSlip.h"; sourceTree = "<group>"; };
+		03F4A2172276D4C800B445D0 /* ZSSideSlipCellProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSSideSlipCellProxy.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +131,7 @@
 		03DB3CE42272D31D00CD04FD = {
 			isa = PBXGroup;
 			children = (
-				03DB3D062272D41200CD04FD /* Classes */,
+				03F4A20C2276D4C800B445D0 /* ZSSideSlipCell */,
 				03DB3CEF2272D31D00CD04FD /* ZSSideSlipCell_Master */,
 				03DB3CEE2272D31D00CD04FD /* Products */,
 			);
@@ -165,22 +165,23 @@
 			path = ZSSideSlipCell_Master;
 			sourceTree = "<group>";
 		};
-		03DB3D062272D41200CD04FD /* Classes */ = {
+		03F4A20C2276D4C800B445D0 /* ZSSideSlipCell */ = {
 			isa = PBXGroup;
 			children = (
-				03DB3D072272D43400CD04FD /* ZSSideSlipCell.h */,
-				03DB3D082272D43400CD04FD /* ZSSideSlipCell.m */,
-				03DB3D0A2272D49D00CD04FD /* ZSSideSlipConfig.h */,
-				03DB3D0B2272D5C000CD04FD /* ZSSideSlipAction.h */,
-				03DB3D0C2272D5C000CD04FD /* ZSSideSlipAction.m */,
-				03DB3D0E2272F87B00CD04FD /* ZSSideSlipContainerView.h */,
-				03DB3D0F2272F87B00CD04FD /* ZSSideSlipContainerView.m */,
-				03412FFF22754A6300829E99 /* ZSSideSlipCellProxy.h */,
-				0341300022754A6300829E99 /* ZSSideSlipCellProxy.m */,
-				0341300222754F9300829E99 /* UITableView+ZSSideSlip.h */,
-				0341300322754F9300829E99 /* UITableView+ZSSideSlip.m */,
+				03F4A2162276D4C800B445D0 /* UITableView+ZSSideSlip.h */,
+				03F4A20F2276D4C800B445D0 /* UITableView+ZSSideSlip.m */,
+				03F4A2102276D4C800B445D0 /* ZSSideSlipAction.h */,
+				03F4A2152276D4C800B445D0 /* ZSSideSlipAction.m */,
+				03F4A2142276D4C800B445D0 /* ZSSideSlipCell.h */,
+				03F4A2112276D4C800B445D0 /* ZSSideSlipCell.m */,
+				03F4A2172276D4C800B445D0 /* ZSSideSlipCellProxy.h */,
+				03F4A2122276D4C800B445D0 /* ZSSideSlipCellProxy.m */,
+				03F4A20E2276D4C800B445D0 /* ZSSideSlipConfig.h */,
+				03F4A2132276D4C800B445D0 /* ZSSideSlipContainerView.h */,
+				03F4A20D2276D4C800B445D0 /* ZSSideSlipContainerView.m */,
 			);
-			path = Classes;
+			name = ZSSideSlipCell;
+			path = ../ZSSideSlipCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,21 +254,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0341300422754F9300829E99 /* UITableView+ZSSideSlip.m in Sources */,
-				03DB3D0D2272D5C000CD04FD /* ZSSideSlipAction.m in Sources */,
 				034130072275854900829E99 /* TabBarController.m in Sources */,
 				0341300E2275892000829E99 /* WeChatVC.m in Sources */,
 				03F4A20B2276905D00B445D0 /* FavoriteLinkCell.m in Sources */,
 				034130112275893000829E99 /* ContactsVC.m in Sources */,
 				0341301D22758EA100829E99 /* ChatModel.m in Sources */,
 				034130172275895F00829E99 /* MineVC.m in Sources */,
-				03DB3D102272F87B00CD04FD /* ZSSideSlipContainerView.m in Sources */,
-				03DB3D092272D43400CD04FD /* ZSSideSlipCell.m in Sources */,
+				03F4A21C2276D4C800B445D0 /* ZSSideSlipAction.m in Sources */,
 				03DB3D002272D31F00CD04FD /* main.m in Sources */,
 				03DB3CF22272D31D00CD04FD /* AppDelegate.m in Sources */,
 				034130262275A57500829E99 /* FavoriteModel.m in Sources */,
-				0341300122754A6300829E99 /* ZSSideSlipCellProxy.m in Sources */,
 				034130202275A35300829E99 /* FavoriteTableVC.m in Sources */,
+				03F4A2182276D4C800B445D0 /* ZSSideSlipContainerView.m in Sources */,
+				03F4A21A2276D4C800B445D0 /* ZSSideSlipCell.m in Sources */,
+				03F4A21B2276D4C800B445D0 /* ZSSideSlipCellProxy.m in Sources */,
+				03F4A2192276D4C800B445D0 /* UITableView+ZSSideSlip.m in Sources */,
 				034130142275895200829E99 /* DiscoverVC.m in Sources */,
 				0341301A22758E8900829E99 /* ChatCell.m in Sources */,
 			);
