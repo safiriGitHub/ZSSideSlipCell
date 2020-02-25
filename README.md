@@ -12,6 +12,10 @@ iOS11之后，仿微信左滑删除，可以通过对系统方法进行改造的
 
 ### 简单介绍
 
+0.0.2: ZSSideSlipCell/ZSSideSlipCell.m--修改手势崩溃的bug
+
+0.0.3: 增加调用方法就滑动功能
+
 #### ZSSideSlipAction
 
 侧滑按钮配置action，需要在cell代理中返回

@@ -38,9 +38,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)hideCellSideSlip;
 
 /**
- 展示当前cell的侧滑按钮
+ 手动展示当前cell的侧滑按钮，调用该方法就左滑
  */
-- (void)showCellSideSlip;
+- (void)manualShowCellSideSlip;
 
 @end
 

@@ -41,6 +41,8 @@
     _logoImageView.contentMode = UIViewContentModeCenter;
     _logoImageView.alpha = 0.7;
     [self.tableView addSubview:_logoImageView];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"点击滑动" style:UIBarButtonItemStyleDone target:self action:@selector(clickSideSlip)];
 }
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
     return YES;
@@ -51,6 +53,15 @@
     _logoImageView.frame = CGRectMake(0, -100, self.tableView.frame.size.width, 100);
 }
 
+- (void)clickSideSlip {
+    ChatCell *cell = [self.tableView cellForRowAtIndexPath: [NSIndexPath indexPathForRow:0 inSection:0]];
+    if (cell.isSlip) {
+        [cell hideCellSideSlip];
+    }else {
+        [cell manualShowCellSideSlip];
+    }
+    
+}
 
 #pragma mark - UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

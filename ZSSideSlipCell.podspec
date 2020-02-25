@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ZSSideSlipCell"
-  s.version      = "0.0.1"
+  s.version      = "0.0.3"
   s.summary      = "iOS仿微信左滑删除和收藏左滑效果"
 
   # This description is used to generate tags and improve search results.

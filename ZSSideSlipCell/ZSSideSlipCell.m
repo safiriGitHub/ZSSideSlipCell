@@ -127,22 +127,7 @@ typedef NS_ENUM(NSInteger, ZSSideSlipCellState) {
           BOOL shouldBegin = fabs(translation.y) <= fabs(translation.x);
           if (!shouldBegin) return NO;
           
-          // 询问代理是否需要侧滑
-          if ([self.cellDelegate respondsToSelector:@selector(sideSlipCell:canSlipAtIndexPath:)]) {
-              
-              shouldBegin = [self.cellDelegate sideSlipCell:self canSlipAtIndexPath:self.indexPathOfTableView] || _isSlip;
-          }
-          
-          if (shouldBegin) {
-              // 向代理获取侧滑展示内容数组
-              if ([self.cellDelegate respondsToSelector:@selector(sideSlipCell:editActionsAtIndexPath:)]) {
-                  NSArray *actions = [self.cellDelegate sideSlipCell:self editActionsAtIndexPath:[self indexPathOfTableView]];
-                  if (!actions || actions.count == 0) return NO;
-                  [self setActions:actions];
-              } else {
-                  return NO;
-              }
-          }
+          shouldBegin = [self cellDelegateForSideSlip];
           return shouldBegin;
       }
       return NO;
@@ -302,7 +287,17 @@ typedef NS_ENUM(NSInteger, ZSSideSlipCellState) {
         self.state = ZSSlipCellStateOpen;
     }];
 }
-
+- (void)manualShowCellSideSlip {
+    
+    if (self.isSlip) {
+        return;
+    }
+    [self hideAllSideSlip];
+    if ([self cellDelegateForSideSlip]) {
+        [self showCellSideSlip];
+    }
+    
+}
 
 //尝试绑定proxy进行代理拦截转发
 - (void)bindProxy {
@@ -317,6 +312,26 @@ typedef NS_ENUM(NSInteger, ZSSideSlipCellState) {
 }
 #pragma mark - getters setters
 
+- (BOOL)cellDelegateForSideSlip {
+    BOOL shouldBegin = NO;
+    // 询问代理是否需要侧滑
+    if ([self.cellDelegate respondsToSelector:@selector(sideSlipCell:canSlipAtIndexPath:)]) {
+        
+        shouldBegin = [self.cellDelegate sideSlipCell:self canSlipAtIndexPath:self.indexPathOfTableView] || _isSlip;
+    }
+    
+    if (shouldBegin) {
+        // 向代理获取侧滑展示内容数组
+        if ([self.cellDelegate respondsToSelector:@selector(sideSlipCell:editActionsAtIndexPath:)]) {
+            NSArray *actions = [self.cellDelegate sideSlipCell:self editActionsAtIndexPath:[self indexPathOfTableView]];
+            if (!actions || actions.count == 0) return NO;
+            [self setActions:actions];
+        } else {
+            shouldBegin = NO;
+        }
+    }
+    return shouldBegin;
+}
 - (void)setState:(ZSSideSlipCellState)state {
     _state = state;
     if (state == ZSSlipCellStateNormal) {
