@@ -105,37 +105,47 @@ typedef NS_ENUM(NSInteger, ZSSideSlipCellState) {
 }
 
 #pragma mark - UIGestureRecognizerDelegate 手势处理
+
+
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
-    if ([gestureRecognizer.view.superview isKindOfClass:ZSSideSlipCell.class]) {
-        ZSSideSlipCell *cell = (ZSSideSlipCell *)gestureRecognizer.view.superview;
-        if (cell.isSlip) return YES;// 还是已经侧滑的cell,不做处理
-        
-        [self hideAllSideSlip];//隐藏已经侧滑的其他cell
-    }
-    
-    
-    UIPanGestureRecognizer *gesture = (UIPanGestureRecognizer *)gestureRecognizer;
-    CGPoint translation = [gesture translationInView:gesture.view];
-    //如果手势相对于水平方向的角度大于45°, 则不触发侧滑
-    if (fabs(translation.y) >= fabs(translation.x)) {
-        return NO;
-    }
-    
-    //询问代理是否允许侧滑
-    if ([self.cellDelegate respondsToSelector:@selector(sideSlipCell:canSlipAtIndexPath:)]) {
-        if (![self.cellDelegate sideSlipCell:self canSlipAtIndexPath:self.indexPathOfTableView]) {
-            return NO;
-        }
-    }
-    
-    //向代理获取侧滑展示内容数组
-    if ([self.cellDelegate respondsToSelector:@selector(sideSlipCell:editActionsAtIndexPath:)]) {
-        NSArray *actions = [self.cellDelegate sideSlipCell:self editActionsAtIndexPath:[self indexPathOfTableView]];
-        if (actions.count == 0) return NO;
-        self.actions = actions;
-    }else { return NO; }
-    
-    return YES;
+      if ([gestureRecognizer isKindOfClass:[UIPanGestureRecognizer class]]) {
+          if ([gestureRecognizer.view.superview isKindOfClass:[ZSSideSlipCell class]]) {
+              ZSSideSlipCell * cell = (ZSSideSlipCell *)gestureRecognizer.view.superview;
+              //如果当前的cell，不是已经展示的cell
+              if (!cell.isSlip) {
+                  [self hideAllSideSlip];
+              }else {
+                  //否则只是二次滑动而已
+                  return YES;
+              }
+          }
+          
+          UIPanGestureRecognizer *gesture = (UIPanGestureRecognizer *)gestureRecognizer;
+          CGPoint translation = [gesture translationInView:gesture.view];
+          
+          // 如果手势相对于水平方向的角度大于45°, 则不触发侧滑
+          BOOL shouldBegin = fabs(translation.y) <= fabs(translation.x);
+          if (!shouldBegin) return NO;
+          
+          // 询问代理是否需要侧滑
+          if ([self.cellDelegate respondsToSelector:@selector(sideSlipCell:canSlipAtIndexPath:)]) {
+              
+              shouldBegin = [self.cellDelegate sideSlipCell:self canSlipAtIndexPath:self.indexPathOfTableView] || _isSlip;
+          }
+          
+          if (shouldBegin) {
+              // 向代理获取侧滑展示内容数组
+              if ([self.cellDelegate respondsToSelector:@selector(sideSlipCell:editActionsAtIndexPath:)]) {
+                  NSArray *actions = [self.cellDelegate sideSlipCell:self editActionsAtIndexPath:[self indexPathOfTableView]];
+                  if (!actions || actions.count == 0) return NO;
+                  [self setActions:actions];
+              } else {
+                  return NO;
+              }
+          }
+          return shouldBegin;
+      }
+      return NO;
 }
 
 - (void)panGestureOfContentView:(UIPanGestureRecognizer *)pan {
